@@ -46,7 +46,7 @@ youtube_username: GenZu-m6o
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile photo.jpeg
+about_profile_image: images/profile_photo_with_edge.jpeg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Gen and I'm currently a Ph.D. Student in Max Planck Institute for Chemical Physics of Solids in Dresden, Germany. My research interest now focuses on the combination of condensed matter physics and artificial intelligence, especially seeking a new paradigm to describe the quantum many-body physics system.
 
