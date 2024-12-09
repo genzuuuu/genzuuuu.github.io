@@ -48,7 +48,7 @@ youtube_username: GenZu-m6o
 # about_title: About Me
 about_profile_image: images/profile_photo_with_edge.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Gen and I'm currently a Ph.D. Student in Max Planck Institute for Chemical Physics of Solids in Dresden, Germany. My research interest now focuses on the combination of condensed matter physics and artificial intelligence, especially seeking a new paradigm to describe the quantum many-body physics system.
+  Hi, my name's Gen and I'm currently a Ph.D. Student in Max Planck Institute for Chemical Physics of Solids in Dresden, Germany. My research interest now focuses on the combination of <mark>Condensed Matter Physics</mark> and <mark>Artificial Intelligence</mark>, especially seeking a new paradigm to describe the quantum many-body physics system.
 
   I am most skilled in: <mark>Soulslike Gaming</mark> and <mark>Eating KFC</mark>
 
@@ -82,13 +82,66 @@ content:
         sub_title: Research Assistant
         caption: May 2023 - November 2024
         quote: >
-          Optical Computing and automated photonics design
+          Holographic Memory for Photonic ML Accelerators and Automated Photonics Design
         description: | # this will include new lines to allow paragraphs
-            As we know, the field of artificial intelligence (AI) is rapidly advancing, with recent examples such as Sora for video generation or ChatGPT for natural language inter- action that can enhance human productivity. So, our goal is to explore how machine learning models, particularly large language models, which is usually called LLM, can assist in designing photonic integrated circuits and help to accelerate the photonics research.
+           Demonstrated optical memory and the interfaces with photonic AI accelerators. Built an optical system to study the precise control of state switching of phase change material. Introduced a novel AI-driven photonic design framework leveraging large language models, comprising two primary components, the Layout Agent and the Design Agent.
+
+      - layout: left
+        title: Imperial College London
+        link: https://www.imperial.ac.uk
+        link_text: imperial.ac.uk
+        sub_title: Postgraduate
+        caption: October 2021 - December 2022
+        quote: >
+         Evidence and Implications of Chemical Interface Damping under SERS Mechanism
+        description: | 
+         Compared the change of surface plasmon propagation distance on the designed waveguide structure before and after coating molecules to reveal the existence of chemical interface damping under the surface-enhanced Raman scattering mechanism. Monitored the temperature dependence over excitation laser power in the position of antenna to further explore the implication and influence of chemical interface damping in the light-matter interaction process. Completed the construction of the dark field scattering optical detection experimental system, the acquisition, analysis and fitting of coupled images, and the comparison of physical quantities such as surface plasmon propagation distance and antenna temperature. Finished the writing and defense of the master's thesis based on this experiment.
+
+       - layout: left
+         title: University of Electronic Science and Technology of China
+         link: https://en.uestc.edu.cn
+         link_text: uestc.edu.cn
+         sub_title: Undergraduate
+         caption: November 2020 - May 2021
+         quote: >
+          Study on Asymmetric Y-Branch of Lithium Niobate Optical Waveguide
+         description: |
+          Undertook the analyzation of the refractive index distribution and simulation of the annealing proton exchange process of the lithium niobate optical waveguide. Investigated the relationship between the geometrical parameters of Y-branch waveguide and the loss at the branch based on the bending loss model and the 3D Y-branch optical waveguide built independently and provided the optimal branch angle. Realized the separation of fundamental mode and first-order mode by the study of splitting arm width adjustment, and explored the further application of annealed proton exchange lithium niobate Y-branch optical waveguide in the field of mode division multiplexing. Praised by the graduate essay review committee of UESTC and got 89% as the final score.
+
+        - layout: left
+          title: Institute of Semiconductors, CAS
+          link: http://english.semi.cas.cn
+          link_text: semi.cas.cn
+          sub_title: Undergraduate
+          caption: July 2019 - August 2020
+          quote: >
+           Target Detection and Tracking Algorithms and Applications Based on Machine Vision
+          description: |
+          Undertook preliminary project preparation, conducted information retrieval, investigation, and talked through available topics with supervisor. Deepened prerequisite theoretical knowledge, planned project execution and algorithm design, analyzed and integrated experimental results, and prepared technical reports. Applied the optimized algorithm to identify and track vehicles, pedestrians, and signal light in the transportation systems, as well as figures, apparatus, and experimental operations in laboratory. Passed the review of the research committee at the Institute of Semiconductors, Chinese Academy of Sciences.
+
+       - layout: left
+         title: University of Electronic Science and Technology of China
+         link: https://en.uestc.edu.cn
+         link_text: uestc.edu.cn
+         sub_title: Undergraduate
+         caption: November 2017 - March 2019
+         quote: >
+         Light-Switching Azo-Copolymers Self-Assembly in Multi-Stationary States
+         description: |
+         Employed simulation software to replace azobenzene characteristic functional groups to seek theoretical diversity. Adjusted various reaction time and reaction conditions to synthetize target azobenzene, refined target product, and measured characteristics of the refined product, including mass spectrum, hydrogen nuclear magnetic spectrum, UV characteristics, etc. Realized light-controlled PEG-PmAzo-PAzo self-assemblies switching between multi-stationary states. Isomerized PEG-PmAzo-PAzo between 4 photostationary states under the control of UV, blue, green, and red light.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
+      - layout: left
+        title: Max Planck Institute for Chemical Physics of Solids
+        caption: 2024 - present
+        sub_title: Ph.D. Student
+        quote: >
+         The Max Planck Institute for Chemical Physics of Solids is a research institute of the Max Planck Society. Located in Dresden, Germany, the institute primarily conducts basic research in the natural sciences in the fields of physics and chemistry.
+        description: |
+         In my understanding, the most important role of DFT is to simplify the problem step by step to our acceptable amount of computation in order to study the electronic structure. I have always thought that approximations are the most beautiful part of physics. Although DFT solutions are accurate, they are on a very small scale. Some traditional molecular dynamics methods are on a larger scale but have accuracy issues. I think the trade-off between accuracy and scale is also a challenge that persists throughout computational physics. Such kind of research on using deep learning methods to optimize the trade-off in computation has aroused my great interest. Currently, this type of research is mostly limited to the Hamiltonian, so I would like to spend a few years investigating the neural network wave function to pursue a PhD degree here.
+
       - layout: left
         title: Imperial College London
         caption: 2021 - 2022
@@ -116,8 +169,8 @@ content:
       - Cooking
 #      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
-#      Look at this cool image  
-#      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      Look at the most important partner I have on the planet, my cat, Phi  
+      ![Phi](/genzuuuu.github.io/images/phi.jpeg "Phi")
 
 # Footer
 footer_show_references: true
