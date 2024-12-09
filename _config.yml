@@ -97,27 +97,27 @@ content:
         description: | 
          Compared the change of surface plasmon propagation distance on the designed waveguide structure before and after coating molecules to reveal the existence of chemical interface damping under the surface-enhanced Raman scattering mechanism. Monitored the temperature dependence over excitation laser power in the position of antenna to further explore the implication and influence of chemical interface damping in the light-matter interaction process. Completed the construction of the dark field scattering optical detection experimental system, the acquisition, analysis and fitting of coupled images, and the comparison of physical quantities such as surface plasmon propagation distance and antenna temperature. Finished the writing and defense of the master's thesis based on this experiment.
 
-       - layout: left
-         title: University of Electronic Science and Technology of China
-         link: https://en.uestc.edu.cn
-         link_text: uestc.edu.cn
-         sub_title: Undergraduate
-         caption: November 2020 - May 2021
-         quote: >
+      - layout: left
+        title: University of Electronic Science and Technology of China
+        link: https://en.uestc.edu.cn
+        link_text: uestc.edu.cn
+        sub_title: Undergraduate
+        caption: November 2020 - May 2021
+        quote: >
           Study on Asymmetric Y-Branch of Lithium Niobate Optical Waveguide
-         description: |
+        description: |
           Undertook the analyzation of the refractive index distribution and simulation of the annealing proton exchange process of the lithium niobate optical waveguide. Investigated the relationship between the geometrical parameters of Y-branch waveguide and the loss at the branch based on the bending loss model and the 3D Y-branch optical waveguide built independently and provided the optimal branch angle. Realized the separation of fundamental mode and first-order mode by the study of splitting arm width adjustment, and explored the further application of annealed proton exchange lithium niobate Y-branch optical waveguide in the field of mode division multiplexing. Praised by the graduate essay review committee of UESTC and got 89% as the final score.
 
-       - layout: left
-         title: Institute of Semiconductors, CAS
-         link: http://english.semi.cas.cn
-         link_text: semi.cas.cn
-         sub_title: Undergraduate
-         caption: July 2019 - August 2020
-         quote: >
+      - layout: left
+        title: Institute of Semiconductors, CAS
+        link: http://english.semi.cas.cn
+        link_text: semi.cas.cn
+        sub_title: Undergraduate
+        caption: July 2019 - August 2020
+        quote: >
           Target Detection and Tracking Algorithms and Applications Based on Machine Vision
-         description: |
-         Undertook preliminary project preparation, conducted information retrieval, investigation, and talked through available topics with supervisor. Deepened prerequisite theoretical knowledge, planned project execution and algorithm design, analyzed and integrated experimental results, and prepared technical reports. Applied the optimized algorithm to identify and track vehicles, pedestrians, and signal light in the transportation systems, as well as figures, apparatus, and experimental operations in laboratory. Passed the review of the research committee at the Institute of Semiconductors, Chinese Academy of Sciences.
+        description: |
+          Undertook preliminary project preparation, conducted information retrieval, investigation, and talked through available topics with supervisor. Deepened prerequisite theoretical knowledge, planned project execution and algorithm design, analyzed and integrated experimental results, and prepared technical reports. Applied the optimized algorithm to identify and track vehicles, pedestrians, and signal light in the transportation systems, as well as figures, apparatus, and experimental operations in laboratory. Passed the review of the research committee at the Institute of Semiconductors, Chinese Academy of Sciences.
 
       - layout: left
         title: University of Electronic Science and Technology of China
@@ -126,9 +126,9 @@ content:
         sub_title: Undergraduate
         caption: November 2017 - March 2019
         quote: >
-        Light-Switching Azo-Copolymers Self-Assembly in Multi-Stationary States
+          Light-Switching Azo-Copolymers Self-Assembly in Multi-Stationary States
         description: |
-        Employed simulation software to replace azobenzene characteristic functional groups to seek theoretical diversity. Adjusted various reaction time and reaction conditions to synthetize target azobenzene, refined target product, and measured characteristics of the refined product, including mass spectrum, hydrogen nuclear magnetic spectrum, UV characteristics, etc. Realized light-controlled PEG-PmAzo-PAzo self-assemblies switching between multi-stationary states. Isomerized PEG-PmAzo-PAzo between 4 photostationary states under the control of UV, blue, green, and red light.
+          Employed simulation software to replace azobenzene characteristic functional groups to seek theoretical diversity. Adjusted various reaction time and reaction conditions to synthetize target azobenzene, refined target product, and measured characteristics of the refined product, including mass spectrum, hydrogen nuclear magnetic spectrum, UV characteristics, etc. Realized light-controlled PEG-PmAzo-PAzo self-assemblies switching between multi-stationary states. Isomerized PEG-PmAzo-PAzo between 4 photostationary states under the control of UV, blue, green, and red light.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -167,7 +167,6 @@ content:
       - Snowboarding
       - Gaming
       - Cooking
-#      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
       Look at the most important partner I have on the planet, my cat, Phi  
       ![Phi](/genzuuuu.github.io/images/phi.jpeg "Phi")
