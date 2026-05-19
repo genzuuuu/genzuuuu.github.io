@@ -22,22 +22,13 @@ permalink: /
       <span class="mark">artificial intelligence</span>, especially seeking a new
       paradigm to describe quantum many-body physics systems.
     </p>
-    <p>
-      I am most skilled in: <span class="mark">Soulslike gaming</span> and
-      <span class="mark">eating KFC</span>.
-    </p>
 
-    <h2 class="section-heading">interests</h2>
-    <p>Alongside physics and machine learning, some of my hobbies are:</p>
-    <ul>
-      <li>Snowboarding</li>
-      <li>Gaming</li>
-      <li>Cooking</li>
-    </ul>
-    <p>Look at the most important partner I have on the planet, my cat, Phi:</p>
-    <p>
-      <img src="{{ '/images/phi.jpg' | relative_url }}" alt="Phi the cat" class="about-inline-photo">
-    </p>
+    <blockquote class="epigraph">
+      <p>
+        A scientific theory is usually felt to be better than its predecessors not only in the sense that it is a better instrument for discovering and solving puzzles but also because it is somehow a better representation of what nature is really like.
+      </p>
+      <footer>Thomas Kuhn, <cite>The Structure of Scientific Revolutions</cite></footer>
+    </blockquote>
   </div>
 
   <aside class="about-sidebar profile-card">
