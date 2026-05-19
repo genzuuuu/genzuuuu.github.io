@@ -3,7 +3,7 @@
   venue: "Nano Letters"
   year: 2026
   selected: true
-  preview: /images/publication_preview/kan-crystal.svg
+  preview: /images/publication_preview/kan-crystal.png
   link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=we-i5R8AAAAJ&citation_for_view=we-i5R8AAAAJ:d1gkVwhDpl0C"
 
 - title: "Light-Switching Azo-Copolymers Self-Assembly in Multi-Stationary States"
@@ -12,5 +12,5 @@
   year: 2019
   detail: "40 (9), 1900058"
   selected: true
-  preview: /images/publication_preview/azo-polymers.svg
+  preview: /images/publication_preview/azo-polymers.png
   link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=we-i5R8AAAAJ&citation_for_view=we-i5R8AAAAJ:9yKSN-GCB0IC"
