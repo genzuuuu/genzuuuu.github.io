@@ -10,4 +10,4 @@ permalink: /publications/
   <a href="https://scholar.google.com/citations?user={{ site.social.googlescholar }}&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
 </p>
 
-{% include publications-list.html %}
+{% include publications-list.html preview=true %}

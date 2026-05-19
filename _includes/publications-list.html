@@ -3,6 +3,55 @@
   {% assign pubs = pubs | where: 'selected', true %}
 {% endif %}
 
+{% if include.preview %}
+<ol class="publications-preview">
+  {% for pub in pubs %}
+    <li class="pub-row">
+      {% if pub.preview %}
+        <div class="pub-preview">
+          <figure>
+            {% if pub.link %}
+              <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="{{ pub.preview | relative_url }}"
+                  alt="{{ pub.title }}"
+                  class="pub-preview-img"
+                  loading="lazy"
+                >
+              </a>
+            {% else %}
+              <img
+                src="{{ pub.preview | relative_url }}"
+                alt="{{ pub.title }}"
+                class="pub-preview-img"
+                loading="lazy"
+              >
+            {% endif %}
+          </figure>
+        </div>
+      {% endif %}
+      <div class="pub-content">
+        <div class="pub-title">
+          {% if pub.link %}
+            <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
+          {% else %}
+            {{ pub.title }}
+          {% endif %}
+        </div>
+        <div class="pub-authors">{{ pub.authors }}</div>
+        <div class="pub-venue">
+          <em>{{ pub.venue }}</em>{% if pub.detail %}, {{ pub.detail }}{% endif %}, {{ pub.year }}
+        </div>
+        {% if pub.pdf %}
+          <div class="pub-links">
+            <a href="{{ pub.pdf }}" class="pub-btn" target="_blank" rel="noopener noreferrer">PDF</a>
+          </div>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ol>
+{% else %}
 <div class="publications">
   {% for pub in pubs %}
     <article class="pub-item">
@@ -20,3 +69,4 @@
     </article>
   {% endfor %}
 </div>
+{% endif %}

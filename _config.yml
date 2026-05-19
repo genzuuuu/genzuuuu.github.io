@@ -23,7 +23,7 @@ social:
 # Navigation
 nav:
   - title: about
-    url: /about/
+    url: /
   - title: publications
     url: /publications/
   - title: experience
@@ -42,6 +42,7 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 exclude:
   - Gemfile

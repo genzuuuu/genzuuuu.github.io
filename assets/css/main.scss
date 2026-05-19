@@ -157,6 +157,10 @@ a {
   }
 }
 
+.post-header {
+  margin-bottom: 1.5rem;
+}
+
 .section-heading {
   font-family: $sans;
   font-size: 1.2rem;
@@ -165,6 +169,16 @@ a {
   padding-bottom: 0.35rem;
   border-bottom: 1px solid $border;
   text-transform: lowercase;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+    }
+  }
 }
 
 .section-more {
@@ -215,6 +229,107 @@ a {
   }
 }
 
+.about-page.about-grid {
+  @media (min-width: 768px) {
+    grid-template-columns: minmax(0, 1fr) 240px;
+  }
+}
+
+.profile-card {
+  figure {
+    margin: 0 0 0.75rem;
+  }
+}
+
+.profile-more-info {
+  font-family: $sans;
+  font-size: 0.92rem;
+  color: $muted;
+  margin-bottom: 0.5rem;
+
+  p {
+    margin: 0.15rem 0;
+  }
+
+  a {
+    color: $text;
+  }
+}
+
+.about-inline-photo {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.publications-preview {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pub-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.6rem;
+}
+
+.pub-preview {
+  flex: 0 0 140px;
+  max-width: 140px;
+
+  figure {
+    margin: 0;
+  }
+}
+
+.pub-preview-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid $border;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.pub-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-links {
+  margin-top: 0.45rem;
+}
+
+.pub-btn {
+  display: inline-block;
+  font-family: $sans;
+  font-size: 0.82rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid $border;
+  border-radius: 3px;
+  color: $text;
+  text-decoration: none;
+
+  &:hover {
+    border-color: $accent;
+    color: $accent;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .pub-row {
+    flex-direction: column;
+  }
+
+  .pub-preview {
+    flex: none;
+    max-width: 180px;
+  }
+}
+
 .publications .pub-item {
   margin-bottom: 1.35rem;
 }
@@ -235,11 +350,20 @@ a {
   }
 }
 
+.publications-preview .pub-title {
+  margin-bottom: 0.2rem;
+}
+
 .pub-authors,
 .pub-venue {
   margin: 0;
   font-size: 0.98rem;
   color: $muted;
+}
+
+.publications-preview .pub-authors,
+.publications-preview .pub-venue {
+  line-height: 1.45;
 }
 
 .entry {

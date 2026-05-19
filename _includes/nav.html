@@ -5,8 +5,16 @@
       {% for item in site.nav %}
         {% assign item_path = item.url | remove: '/' %}
         {% assign page_path = page.url | remove: '/' %}
+        {% assign is_active = false %}
+        {% if item_path == '' or item_path == 'index.html' %}
+          {% if page_path == '' or page_path == 'index.html' %}
+            {% assign is_active = true %}
+          {% endif %}
+        {% elsif page_path == item_path %}
+          {% assign is_active = true %}
+        {% endif %}
         <a
-          class="nav-link{% if page_path == item_path %} is-active{% endif %}"
+          class="nav-link{% if is_active %} is-active{% endif %}"
           href="{{ item.url | relative_url }}"
         >{{ item.title }}</a>
       {% endfor %}

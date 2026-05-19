@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#f4f6f8"/>
+  <rect x="24" y="24" width="352" height="232" rx="6" fill="#fff" stroke="#d8dee6"/>
+  <path d="M48 200 L120 120 L200 160 L280 80 L352 140" fill="none" stroke="#b50909" stroke-width="3"/>
+  <circle cx="120" cy="120" r="8" fill="#2c5282"/>
+  <circle cx="200" cy="160" r="8" fill="#2c5282"/>
+  <circle cx="280" cy="80" r="8" fill="#2c5282"/>
+  <text x="200" y="248" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#555">Crystal energy landscape</text>
+</svg>
