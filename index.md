@@ -41,7 +41,7 @@ permalink: /
       >
     </figure>
     <div class="profile-more-info">
-      <p>{{ site.name }}</p>
+      <p class="profile-name">{{ site.name }} ({{ site.name_chinese }})</p>
       <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
     </div>
     {% include social.html %}
