@@ -1,0 +1,16 @@
+{% if site.social %}
+<ul class="social-links">
+  {% if site.social.twitter %}
+    <li><a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a></li>
+  {% endif %}
+  {% if site.social.github %}
+    <li><a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
+  {% endif %}
+  {% if site.social.instagram %}
+    <li><a href="https://instagram.com/{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a></li>
+  {% endif %}
+  {% if site.social.googlescholar %}
+    <li><a href="https://scholar.google.com/citations?user={{ site.social.googlescholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">Google Scholar</a></li>
+  {% endif %}
+</ul>
+{% endif %}

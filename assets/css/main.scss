@@ -1,0 +1,316 @@
+---
+---
+
+$max-width: 52rem;
+$text: #222;
+$muted: #555;
+$accent: #b50909;
+$border: #e5e5e5;
+$bg: #fff;
+$serif: "Noto Serif", Georgia, "Times New Roman", serif;
+$sans: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: $text;
+  background: $bg;
+  font-family: $serif;
+  line-height: 1.65;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  width: min(100% - 2.5rem, $max-width);
+  margin-inline: auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid $border;
+  backdrop-filter: blur(6px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+}
+
+.site-title {
+  font-family: $sans;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: $text;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: $accent;
+  }
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+}
+
+.nav-link {
+  font-family: $sans;
+  font-size: 0.95rem;
+  color: $muted;
+  text-transform: lowercase;
+  text-decoration: none;
+
+  &:hover,
+  &.is-active {
+    color: $text;
+    text-decoration: none;
+  }
+
+  &.is-active {
+    font-weight: 700;
+    border-bottom: 2px solid $accent;
+  }
+}
+
+.page {
+  padding: 2.2rem 0 3.5rem;
+}
+
+.page-title {
+  font-family: $sans;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.home-hero {
+  margin-bottom: 2.5rem;
+}
+
+.home-name {
+  font-family: $sans;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.03em;
+}
+
+.home-role {
+  font-family: $sans;
+  font-size: 1.05rem;
+  color: $muted;
+  margin: 0 0 0.75rem;
+}
+
+.home-contact {
+  font-family: $sans;
+  font-size: 0.95rem;
+  margin: 0 0 1.25rem;
+
+  a {
+    color: $text;
+    border-bottom: 1px solid $border;
+
+    &:hover {
+      color: $accent;
+      border-bottom-color: $accent;
+    }
+  }
+}
+
+.home-intro {
+  margin-bottom: 2rem;
+
+  p {
+    margin: 0 0 1rem;
+  }
+}
+
+.section-heading {
+  font-family: $sans;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid $border;
+  text-transform: lowercase;
+}
+
+.section-more {
+  font-family: $sans;
+  font-size: 0.92rem;
+  margin-top: 0.75rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-family: $sans;
+  font-size: 0.92rem;
+
+  li {
+    margin: 0;
+  }
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: minmax(0, 1fr) 220px;
+    align-items: start;
+  }
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-sidebar {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+}
+
+.publications .pub-item {
+  margin-bottom: 1.35rem;
+}
+
+.pub-title {
+  font-family: $sans;
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  line-height: 1.4;
+
+  a {
+    color: $text;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.pub-authors,
+.pub-venue {
+  margin: 0;
+  font-size: 0.98rem;
+  color: $muted;
+}
+
+.entry {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid $border;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.entry-header {
+  margin-bottom: 0.5rem;
+}
+
+.entry-title {
+  font-family: $sans;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.entry-meta {
+  font-family: $sans;
+  font-size: 0.9rem;
+  color: $muted;
+  margin: 0.2rem 0 0;
+}
+
+.entry-subtitle {
+  font-style: italic;
+  margin: 0.15rem 0 0;
+}
+
+.entry-summary {
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: $text;
+}
+
+.entry-body p {
+  margin: 0 0 0.75rem;
+}
+
+.mark {
+  background: #fff3cd;
+  padding: 0 0.15em;
+}
+
+.site-footer {
+  border-top: 1px solid $border;
+  padding: 1.25rem 0 2rem;
+  font-family: $sans;
+  font-size: 0.85rem;
+  color: $muted;
+
+  a {
+    color: $muted;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.footer-inner p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

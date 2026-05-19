@@ -1,0 +1,22 @@
+{% assign pubs = site.data.publications | sort: 'year' | reverse %}
+{% if include.selected %}
+  {% assign pubs = pubs | where: 'selected', true %}
+{% endif %}
+
+<div class="publications">
+  {% for pub in pubs %}
+    <article class="pub-item">
+      <h3 class="pub-title">
+        {% if pub.link %}
+          <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
+        {% else %}
+          {{ pub.title }}
+        {% endif %}
+      </h3>
+      <p class="pub-authors">{{ pub.authors }}</p>
+      <p class="pub-venue">
+        <em>{{ pub.venue }}</em>{% if pub.detail %}, {{ pub.detail }}{% endif %}, {{ pub.year }}
+      </p>
+    </article>
+  {% endfor %}
+</div>
