@@ -12,7 +12,8 @@ position: Ph.D. Student
 affiliation: Max Planck Institute for Chemical Physics of Solids
 email: gen.zu@cpfs.mpg.de
 profile_image: /images/profile-photo.jpeg
-favicon: /images/Cat--Streamline-Cyber.png
+favicon: /favicon.png
+favicon_version: "2"
 
 # Social (set to false or remove to hide)
 social:
