@@ -6,8 +6,7 @@ permalink: /
 
 <header class="post-header">
   <h1 class="home-name">{{ site.name }}</h1>
-  <p class="home-role">{{ site.position }}</p>
-  <p class="home-contact"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p class="home-role">{{ site.position }} · {{ site.affiliation }}</p>
 </header>
 
 <div class="about-grid about-page">

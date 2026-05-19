@@ -1,16 +1,44 @@
 {% if site.social %}
-<ul class="social-links">
+<nav class="social-icons" aria-label="Social links">
   {% if site.social.twitter %}
-    <li><a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a></li>
+    <a
+      class="social-icon"
+      href="https://twitter.com/{{ site.social.twitter }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Twitter / X"
+      aria-label="Twitter"
+    ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
   {% endif %}
   {% if site.social.github %}
-    <li><a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
+    <a
+      class="social-icon"
+      href="https://github.com/{{ site.social.github }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="GitHub"
+      aria-label="GitHub"
+    ><i class="fa-brands fa-github" aria-hidden="true"></i></a>
   {% endif %}
   {% if site.social.instagram %}
-    <li><a href="https://instagram.com/{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a></li>
+    <a
+      class="social-icon"
+      href="https://instagram.com/{{ site.social.instagram }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Instagram"
+      aria-label="Instagram"
+    ><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
   {% endif %}
   {% if site.social.googlescholar %}
-    <li><a href="https://scholar.google.com/citations?user={{ site.social.googlescholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">Google Scholar</a></li>
+    <a
+      class="social-icon"
+      href="https://scholar.google.com/citations?user={{ site.social.googlescholar }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Google Scholar"
+      aria-label="Google Scholar"
+    ><i class="fa-brands fa-google-scholar" aria-hidden="true"></i></a>
   {% endif %}
-</ul>
+</nav>
 {% endif %}
