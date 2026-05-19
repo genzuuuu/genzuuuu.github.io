@@ -32,11 +32,12 @@ permalink: /
   </div>
 
   <aside class="about-sidebar profile-card">
-    <figure>
+    <figure class="profile-photo-wrap">
       <img
         src="{{ site.profile_image | relative_url }}"
         alt="{{ site.name }}"
         class="about-photo"
+        loading="eager"
       >
     </figure>
     <div class="profile-more-info">
