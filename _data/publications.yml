@@ -3,15 +3,28 @@
   venue: "Nano Letters"
   year: 2026
   detail: "26(15), 5036–5044"
+  first_author: true
   selected: true
   preview: /images/publication_preview/kan-crystal.png
   link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=we-i5R8AAAAJ&citation_for_view=we-i5R8AAAAJ:d1gkVwhDpl0C"
+
+- title: "Non-covalent Interactions at cm⁻¹ Accuracy: Data Efficient Physics-Informed Distillation for Machine Learning Interatomic Potentials"
+  authors: "Y Shen, S Akram, L Primeau, G Zu, KD Vogiatzis, Y Zhang, A Del Maestro"
+  venue: "arXiv preprint"
+  year: 2026
+  detail: "arXiv:2606.05127"
+  first_author: false
+  selected: true
+  preview: /images/publication_preview/distillation.png
+  link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=we-i5R8AAAAJ&citation_for_view=we-i5R8AAAAJ:2osOgNQ5qMEC"
+  pdf: "https://arxiv.org/pdf/2606.05127"
 
 - title: "Light-Switching Azo-Copolymers Self-Assembly in Multi-Stationary States"
   authors: "S Dong, W Sun, D Wang, H Zhao, G Zu, Y Zheng"
   venue: "Macromolecular Rapid Communications"
   year: 2019
   detail: "40 (9), 1900058"
+  first_author: false
   selected: true
   preview: /images/publication_preview/azo-polymers.png
   link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=we-i5R8AAAAJ&citation_for_view=we-i5R8AAAAJ:9yKSN-GCB0IC"
