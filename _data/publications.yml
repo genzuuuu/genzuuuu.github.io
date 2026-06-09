@@ -7,6 +7,7 @@
   selected: true
   preview: /images/publication_preview/kan-crystal.png
   link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=we-i5R8AAAAJ&citation_for_view=we-i5R8AAAAJ:d1gkVwhDpl0C"
+  arxiv: "https://arxiv.org/abs/2604.04636"
   pdf: "https://arxiv.org/pdf/2604.04636"
 
 - title: "Non-covalent Interactions at cm⁻¹ Accuracy: Data Efficient Physics-Informed Distillation for Machine Learning Interatomic Potentials"
@@ -18,6 +19,7 @@
   selected: true
   preview: /images/publication_preview/distillation.png
   link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=we-i5R8AAAAJ&citation_for_view=we-i5R8AAAAJ:2osOgNQ5qMEC"
+  arxiv: "https://arxiv.org/abs/2606.05127"
   pdf: "https://arxiv.org/pdf/2606.05127"
 
 - title: "Light-Switching Azo-Copolymers Self-Assembly in Multi-Stationary States"

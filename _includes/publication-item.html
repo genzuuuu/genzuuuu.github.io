@@ -1,4 +1,4 @@
-{% if include.preview %}
+{% if include.card %}
 <li class="pub-row">
   {% if include.pub.preview %}
     <div class="pub-preview">
@@ -35,9 +35,14 @@
     <div class="pub-venue">
       <em>{{ include.pub.venue }}</em>{% if include.pub.detail %}, {{ include.pub.detail }}{% endif %}, {{ include.pub.year }}
     </div>
-    {% if include.pub.pdf %}
+    {% if include.pub.pdf or include.pub.arxiv %}
       <div class="pub-links">
-        <a href="{{ include.pub.pdf }}" class="pub-btn" target="_blank" rel="noopener noreferrer">PDF</a>
+        {% if include.pub.pdf %}
+          <a href="{{ include.pub.pdf }}" class="pub-btn" target="_blank" rel="noopener noreferrer">PDF</a>
+        {% endif %}
+        {% if include.pub.arxiv %}
+          <a href="{{ include.pub.arxiv }}" class="pub-btn" target="_blank" rel="noopener noreferrer">arXiv</a>
+        {% endif %}
       </div>
     {% endif %}
   </div>
@@ -55,9 +60,14 @@
   <p class="pub-venue">
     <em>{{ include.pub.venue }}</em>{% if include.pub.detail %}, {{ include.pub.detail }}{% endif %}, {{ include.pub.year }}
   </p>
-  {% if include.pub.pdf %}
+  {% if include.pub.pdf or include.pub.arxiv %}
     <p class="pub-links">
-      <a href="{{ include.pub.pdf }}" class="pub-btn" target="_blank" rel="noopener noreferrer">PDF</a>
+      {% if include.pub.pdf %}
+        <a href="{{ include.pub.pdf }}" class="pub-btn" target="_blank" rel="noopener noreferrer">PDF</a>
+      {% endif %}
+      {% if include.pub.arxiv %}
+        <a href="{{ include.pub.arxiv }}" class="pub-btn" target="_blank" rel="noopener noreferrer">arXiv</a>
+      {% endif %}
     </p>
   {% endif %}
 </article>

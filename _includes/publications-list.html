@@ -4,23 +4,24 @@
 {% endif %}
 {% assign first_author_pubs = pubs_all | where_exp: 'item', 'item.first_author' | sort: 'year' | reverse %}
 {% assign coauthor_pubs = pubs_all | where_exp: 'item', 'item.first_author == false' | sort: 'year' | reverse %}
+{% assign use_card = include.preview %}
 
-{% if include.preview %}
+{% if use_card %}
 <ol class="publications-preview">
   {% for pub in first_author_pubs %}
-    {% include publication-item.html pub=pub preview=true %}
+    {% include publication-item.html pub=pub card=true %}
   {% endfor %}
   {% for pub in coauthor_pubs %}
-    {% include publication-item.html pub=pub preview=true %}
+    {% include publication-item.html pub=pub card=true %}
   {% endfor %}
 </ol>
 {% else %}
 <div class="publications">
   {% for pub in first_author_pubs %}
-    {% include publication-item.html pub=pub preview=false %}
+    {% include publication-item.html pub=pub card=false %}
   {% endfor %}
   {% for pub in coauthor_pubs %}
-    {% include publication-item.html pub=pub preview=false %}
+    {% include publication-item.html pub=pub card=false %}
   {% endfor %}
 </div>
 {% endif %}
