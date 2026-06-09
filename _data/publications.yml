@@ -7,6 +7,7 @@
   selected: true
   preview: /images/publication_preview/kan-crystal.png
   link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=we-i5R8AAAAJ&citation_for_view=we-i5R8AAAAJ:d1gkVwhDpl0C"
+  pdf: "https://arxiv.org/pdf/2604.04636"
 
 - title: "Non-covalent Interactions at cm⁻¹ Accuracy: Data Efficient Physics-Informed Distillation for Machine Learning Interatomic Potentials"
   authors: "Y Shen, S Akram, L Primeau, G Zu, KD Vogiatzis, Y Zhang, A Del Maestro"

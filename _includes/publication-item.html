@@ -1,0 +1,64 @@
+{% if include.preview %}
+<li class="pub-row">
+  {% if include.pub.preview %}
+    <div class="pub-preview">
+      <figure>
+        {% if include.pub.link %}
+          <a href="{{ include.pub.link }}" target="_blank" rel="noopener noreferrer">
+            <img
+              src="{{ include.pub.preview | relative_url }}"
+              alt="{{ include.pub.title }}"
+              class="pub-preview-img"
+              loading="lazy"
+            >
+          </a>
+        {% else %}
+          <img
+            src="{{ include.pub.preview | relative_url }}"
+            alt="{{ include.pub.title }}"
+            class="pub-preview-img"
+            loading="lazy"
+          >
+        {% endif %}
+      </figure>
+    </div>
+  {% endif %}
+  <div class="pub-content{% unless include.pub.preview %} pub-content-full{% endunless %}">
+    <div class="pub-title">
+      {% if include.pub.link %}
+        <a href="{{ include.pub.link }}" target="_blank" rel="noopener noreferrer">{{ include.pub.title }}</a>
+      {% else %}
+        {{ include.pub.title }}
+      {% endif %}
+    </div>
+    <div class="pub-authors">{{ include.pub.authors }}</div>
+    <div class="pub-venue">
+      <em>{{ include.pub.venue }}</em>{% if include.pub.detail %}, {{ include.pub.detail }}{% endif %}, {{ include.pub.year }}
+    </div>
+    {% if include.pub.pdf %}
+      <div class="pub-links">
+        <a href="{{ include.pub.pdf }}" class="pub-btn" target="_blank" rel="noopener noreferrer">PDF</a>
+      </div>
+    {% endif %}
+  </div>
+</li>
+{% else %}
+<article class="pub-item">
+  <h3 class="pub-title">
+    {% if include.pub.link %}
+      <a href="{{ include.pub.link }}" target="_blank" rel="noopener noreferrer">{{ include.pub.title }}</a>
+    {% else %}
+      {{ include.pub.title }}
+    {% endif %}
+  </h3>
+  <p class="pub-authors">{{ include.pub.authors }}</p>
+  <p class="pub-venue">
+    <em>{{ include.pub.venue }}</em>{% if include.pub.detail %}, {{ include.pub.detail }}{% endif %}, {{ include.pub.year }}
+  </p>
+  {% if include.pub.pdf %}
+    <p class="pub-links">
+      <a href="{{ include.pub.pdf }}" class="pub-btn" target="_blank" rel="noopener noreferrer">PDF</a>
+    </p>
+  {% endif %}
+</article>
+{% endif %}
